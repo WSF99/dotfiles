@@ -57,5 +57,9 @@ ln -sf ${HOME}/dotfiles/.config/btop ${HOME}/.config/btop
 ln -sf ${HOME}/dotfiles/.config/kitty ${HOME}/.config/kitty
 ln -sf ${HOME}/dotfiles/.config/fastfetch ${HOME}/.config/fastfetch
 
+echo "Installing Node v22.13.1..."
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+nvm install 22
+
 # Final message
 echo "Setup complete! Please restart your terminal or run 'source ~/.zshrc' to apply the changes."
